@@ -1,0 +1,398 @@
+/* Для мобильных устройств */
+@media screen and (min-width: 375px) and (max-width: 767.98px) {
+.pop-up-exercise {
+    width: 335px;
+    /* max-width: 716px; */
+    overflow-y: auto;
+}
+
+#modalImage {
+    width: 295px;
+    height: 258px;
+    display: block;
+    margin-left: -5px;
+}
+
+.modal-properties-exercise {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 295px;
+    overflow-y: auto;
+
+}
+
+.svg-vector2 {
+    width: 255px;
+}
+
+.exercise-info {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 295px;
+}
+.pop-up-exercise-content {
+   
+    border-radius: 20px;
+    max-width: 295px;
+    
+}
+.pop-up-exercise-content {
+    position: relative;
+    border-radius: 20px;
+    max-width: 295px;
+    background-color: #F6F6F6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-item {
+    width: 85px;
+}
+
+.exercise-details {
+    width: 255px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.add-to-favorites-btn {
+    margin-top: 40px;
+}
+.give-rating-btn {
+    margin-top: 9px;
+}
+
+}
+/* Для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+    .pop-up-exercise {
+        width: 716px;
+        height: 100%;
+    }
+.exercise-info {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    width: 716px;
+}
+
+
+.info-item {
+    width: 85px;
+}
+
+.svg-vector2 {
+    width: 342px;
+}
+
+.modal-properties-exercise {
+    max-width: 295px;
+}
+
+
+
+#modalImage {
+    width: 260px;
+    height: 259px;
+    margin-left: 20px;
+}
+
+.pop-up-exercise-content {
+    position: relative;
+    
+    width: 716px;
+ 
+}
+
+.add-to-favorites-btn {
+    margin-top: 40px;
+}
+
+.give-rating-btn {
+    margin-top: 40px;
+}
+
+}
+
+/* Для десктопов */
+@media screen and (min-width: 1440px) {
+    .pop-up-exercise {
+        width: 732px;
+        height: 100%;
+    }
+
+#modalImage {
+    margin-left: 20px;
+} 
+
+.name-modal {
+    max-width: 342px;
+}
+
+.modal-properties-exercise {
+    max-width: 342px;
+}
+
+.exercise-info {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+
+}
+
+.info-item {
+    width: 65px;
+}
+
+.svg-vector2 {
+    width: 342px;
+}
+
+.pop-up-exercise-content {
+    width: 732px;
+}
+
+.add-to-favorites-btn {
+    margin-top: 40px;
+}
+
+.give-rating-btn {
+    margin-top: 40px;
+}
+
+}
+
+.pop-up-exercise {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(27, 27, 27, 0.60);;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pop-up-exercise-content {
+    position: relative;
+
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.pop-up-exercise-details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#modalImage {
+    margin: 40px auto;
+    margin-right: 20px;
+    max-width: 270px;
+    max-height: 259px;
+}
+
+.exercise-item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.exercise-info-modul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.info-item {
+    color: rgba(27, 27, 27, 0.40);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.info-item-data {
+    color: #1B1B1B;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        /* 128.571% */
+}
+/* ------------------ */
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+
+
+.horizontal-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.modal-properties-exercise {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -10px;
+    
+}
+
+.info-item-calories {
+    margin-top: 16px;
+}
+
+.svg-vector1 {
+   margin-top: 16px; 
+}
+
+.svg-vector1 {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.name-modal {
+    color: #1B1B1B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 40px;
+}
+
+.modal-rating {
+    margin-top: 2px;
+    color: #1B1B1B;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.modal-description {
+    color: rgba(27, 27, 27, 0.60);
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        /* 128.571% */
+        max-width: 342px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+    .add-to-favorites-btn {
+        color: white;
+        display: flex;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background: #7E847F;
+        border-color: transparent;
+        font-family: "DM Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            /* 150% */
+    }
+
+    .add-to-favorites-btn:hover,
+    .add-to-favorites-btn:focus {
+        background-color: #5F6560;
+    }
+
+.icon-heart {
+   margin-left: 8px; 
+}
+
+.give-rating-btn {
+    border: 1px solid #1B1B1B;
+    color: #1B1B1B;   
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.give-rating-btn:hover,
+.give-rating-btn:focus {
+    border: 1px solid #7E847F;
+}
+
+
+.rating {
+    display: inline-block;
+    font-size: 0;
+}
+
+.star {
+    width: 18px;
+    height: 18px;
+    fill: gray;
+    margin-left: 2px;
+    /* Серый цвет звезды */
+    transition: fill 0.2s ease;
+    /* Плавный переход для изменения цвета */
+}
+
+
+.rating-star {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}

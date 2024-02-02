@@ -1,0 +1,59 @@
+<section class="section">
+  <div class="container exercises-container">
+    <div class="exercises-top-container">
+      <div class="exercises__desc">
+      <h2 class="exercises-title">Exercises</h2>
+      <span class="exircises-category"></span>
+      </div>
+      <div class="exercises-top-buttons">
+        <button
+          class="exercises-filter-button"
+          data-name="Muscles"
+          type="submit"
+        >
+          Muscles
+        </button>
+        <button
+          class="exercises-filter-button"
+          data-name="Body parts"
+          type="submit"
+        >
+          Body parts
+        </button>
+        <button
+          class="exercises-filter-button"
+          data-name="Equipment"
+          type="submit"
+        >
+          Equipment
+        </button>
+        <form id="exercises-search-form" class="input-hidden">
+          <input
+            class="exercises-search-input"
+            type="text"
+            placeholder="Search"
+          />
+          <svg
+            class="exercises-inputclear-icon exercises-is-hidden"
+            width="18"
+            height="18"
+            aria-label="clear-icon"
+          >
+            <use href="./img/exercises/exercises-sprite.svg#icon-x"></use>
+          </svg>
+          <svg
+            class="exercises-search-icon"
+            width="18"
+            height="18"
+            aria-label="search-icon"
+          >
+            <use href="./img/exercises/exercises-sprite.svg#icon-search"></use>
+          </svg>
+        </form>
+      </div>
+    </div>
+    <ul class="exercises-list">
+    </ul>
+    <div id="tui-pagination-container" class="tui-pagination"></div>
+  </div>
+</section>

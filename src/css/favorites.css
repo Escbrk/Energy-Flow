@@ -1,0 +1,15 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./common.css');
+@import url('./container.css');
+@import url('./section.css');
+@import url('./fav_quote.css');
+@import url('./fav_list.css');
+@import url('./header.css');
+@import url('./scroll.css');
+@import url('./pop_up_exercise.css');
+@import url('./pagination.css');
