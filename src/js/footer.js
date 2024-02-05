@@ -10,6 +10,20 @@ const refs = {
 
 refs.email.addEventListener('input', fieldChecker);
 
+function fieldChecker() {
+  const input = refs.email.value;
+
+  if (input.length === 0) {
+    refs.button.disabled = true;
+    refs.button.classList.add('noActive');
+  } else {
+    refs.button.disabled = false;
+    refs.button.classList.remove('noActive');
+  }
+
+  refs.form.addEventListener('submit', emailChecker);
+}
+
 async function emailChecker(e) {
   e.preventDefault();
 
@@ -38,18 +52,4 @@ async function emailChecker(e) {
       message: 'Something went wrong, try again',
     });
   }
-}
-
-function fieldChecker() {
-  const input = refs.email.value;
-
-  if (input.length === 0) {
-    refs.button.disabled = true;
-    refs.button.classList.add('noActive');
-  } else {
-    refs.button.disabled = false;
-    refs.button.classList.remove('noActive');
-  }
-
-  refs.form.addEventListener('submit', emailChecker);
 }
