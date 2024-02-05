@@ -1,18 +1,19 @@
 {
-  "name": "project-radioactive",
-  "private": true,
+  "name": "Energy-Flow",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Escbrk.github.io/Energy-Flow",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-radioactive/",
+    "build": "vite build --base=/Energy-Flow/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "glob": "^8.1.0",
     "vite": "^4.0.5"
   },
-  "author": "Dmytrii Tsybuliak <tonistark1997@gmail.com>",
+  "author": "Paul Ja <pahancheg@icloud.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.7",
