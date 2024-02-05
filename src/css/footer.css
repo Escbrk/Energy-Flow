@@ -16,14 +16,13 @@ footer {
   margin-bottom: 50px;
 }
 .footer--social.logo {
-font-family: var(--font-family);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.12;
-letter-spacing: -0.02em;
-color: #f6f6f6;
-width: 325px;
-
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #f6f6f6;
+  width: 325px;
 }
 .footer--social.list {
   display: flex;
@@ -185,12 +184,12 @@ width: 325px;
     line-height: 1;
   }
 
-  .form--button{
+  .form--button {
     color: #f6f6f6;
   }
-.footer--social.list {
-  margin-top: 30px;
-}
+  .footer--social.list {
+    margin-top: 30px;
+  }
   .footer--text {
     font-size: 64px;
     margin-right: 160px;
@@ -242,4 +241,8 @@ width: 325px;
     background-image: url(../img/footer/footer-desktop@2x.png);
     background-size: contain;
   }
+}
+
+.noActive {
+  cursor: not-allowed;
 }

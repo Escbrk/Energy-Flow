@@ -1,18 +1,23 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 
-const form = document.getElementById('subscriptionForm');
-const email = document.getElementById('email');
-const pattern = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/);
+const refs = {
+  form: document.getElementById('subscriptionForm'),
+  email: document.getElementById('email'),
+  pattern: new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/),
+  button: document.getElementById('submitButton'),
+};
 
-form.addEventListener('submit', async function (event) {
-  event.preventDefault();
+refs.email.addEventListener('input', fieldChecker);
+
+async function emailChecker(e) {
+  e.preventDefault();
+
   try {
-    if (pattern.test(email.value)) {
-      // dsasd@gmail.com
+    if (refs.pattern.test(refs.email.value) || refs.email.value.length != 0) {
       await axios
         .post('https://energyflow.b.goit.study/api/subscription', {
-          email: email.value,
+          email: refs.email.value,
         })
         .then(response =>
           iziToast.success({
@@ -26,11 +31,6 @@ form.addEventListener('submit', async function (event) {
             message: error.response.data.message,
           })
         );
-    } else {
-      iziToast.error({
-        title: 'Error',
-        message: 'Please enter the correct email!',
-      });
     }
   } catch (error) {
     iziToast.error({
@@ -38,4 +38,18 @@ form.addEventListener('submit', async function (event) {
       message: 'Something went wrong, try again',
     });
   }
-});
+}
+
+function fieldChecker() {
+  const input = refs.email.value;
+
+  if (input.length === 0) {
+    refs.button.disabled = true;
+    refs.button.classList.add('noActive');
+  } else {
+    refs.button.disabled = false;
+    refs.button.classList.remove('noActive');
+  }
+
+  refs.form.addEventListener('submit', emailChecker);
+}
