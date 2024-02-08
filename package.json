@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://Escbrk.github.io/Energy-Flow",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build --base=/Energy-Flow/",
     "preview": "vite preview"
   },

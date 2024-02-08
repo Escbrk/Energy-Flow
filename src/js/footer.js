@@ -15,10 +15,8 @@ function fieldChecker() {
 
   if (input.length === 0) {
     refs.button.disabled = true;
-    refs.button.classList.add('noActive');
   } else {
     refs.button.disabled = false;
-    refs.button.classList.remove('noActive');
   }
 
   refs.form.addEventListener('submit', emailChecker);
