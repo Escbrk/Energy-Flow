@@ -20,6 +20,7 @@ function fieldChecker() {
   }
 
   refs.form.addEventListener('submit', emailChecker);
+  
 }
 
 async function emailChecker(e) {
