@@ -62,7 +62,6 @@
 
 .fav-quote-section {
   padding-top: 96px;
-  margin: 0 auto;
 }
 .block {
   width: 335px;
@@ -183,6 +182,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .fav-quote-section {
+    margin: 0 auto;
+  }
   .block {
     width: 368px;
     height: 302px;
